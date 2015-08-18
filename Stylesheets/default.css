@@ -1,0 +1,24 @@
+html {background-color:#ED5E0C}
+h1 {text-align:center;
+    font-family:'Roboto Condensed'}
+h3 {text-align:center}
+
+img {
+    width:300px; 
+    height:300px;
+    border-radius:30px;
+    border-color:#FFFFFF;
+    margin:auto;
+    display:block;
+}
+
+.buttons {
+    display:inline-block
+    height:50px;
+    width:120px;
+    border-color:#6495ed;
+    background-color:#bcd2ee;
+    border-radius:5px;
+    margin:auto;
+    text-align:center}
+a {text-decoration:none}
