@@ -1,7 +1,15 @@
 html {background-color:#ED5E0C}
 h1 {text-align:center;
     font-family:'Roboto Condensed'}
-h3 {text-align:center}
+p {
+    text-align:left;
+    font-family: 'Quicksand';
+    font-size: .5em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
 
 img {
     width:300px; 
@@ -12,13 +20,23 @@ img {
     display:block;
 }
 
+/* div {
+    display:inline-block; ----- this puts buttons in a row, which is what i want, but it is not centered
+} */
+
 .buttons {
+    font-family:'Montserrat';
+    font-size:1.25em;
     display:inline-block
     height:50px;
-    width:120px;
+    width:100px;
     border-color:#6495ed;
-    background-color:#bcd2ee;
+    background-color:#FFB347;
     border-radius:5px;
     margin:auto;
-    text-align:center}
-a {text-decoration:none}
+    text-align:center;
+  }
+a {
+    text-decoration:none;
+    color: #2E5894
+}
