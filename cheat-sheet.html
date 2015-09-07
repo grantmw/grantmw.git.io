@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Stylesheets/cheatsheet.css">
+</head>
+      
+<body>
+  <div><h1>SQL Cheat Sheet</h1></div>
+  <h4>by Grant Wong and Andy Dierker</h4>
+  <h4>8/30/2015</h4>
+        
+   <div><h3>What is SQL?</h3>
+        <p>
+      SQL stands for Structured Query Language. It is a language to communicate with the database management system (DBMS). There are slightly different versions for different vendors or databases. 
+    </p>
+       <p> SQL can interact with databases in a number of ways. It can:</p>
+       <ul> <li>Query a database.</li>
+           <li>Retrieve data from a database.</li>
+           <li>Update, insert, delete or change records in a database.</li>
+           <li>Create new databases or delete old ones.</li>
+           <li>Set permissions within a database to determine who can read/write/access its data.</li>
+         
+</div>
+
+<div><h3>Conventions in SQL</h3>
+    <p> There are a number of conventions in SQL that are standard for the language. 
+<ul><li> Table names should be pluralized.
+        <li>Every command needs to end with a semicolon for it to run. 
+        <li>Commands are not case sensitive, but convention states that basic commands are written in all caps, i.e. SELECT or FROM.
+            <li>The spaces in the names of rows and columns should be replaced by underscores. </ul>
+    </p>
+    
+    <div><h3>Cardinality</h3>
+    <p>
+        In SQL, cardinality refers to the uniqueness of data in a database table. With each data set being a column of data, the cardinality refers to the uniqueness of the data per instance. A data point (column) with a high cardinality will have different value for every instance (row), where a data point with a low cardinality will have the same value over many instances. The cardinality can help with structure and readability. 
+    </p>
+    <p>
+    The cardinality of a table can be expressed as a number - if you are assigning values from a list of directions (north, south, east, west), this column would have a cardinality of 4, because there are four possible values. 
+    </p>
+    <p>
+    Additionally, cardinality can represent the relationship of one table with another. The one-to-one, one-to-many, and many-to-many are common cardinalities. 
+    </p>
+        
+        <div><h3>How to select and order values from SQL databases</h3>
+    <p>
+<ul>
+    <li><strong>To display all data in a table:</strong><br><br>
+    SELECT * FROM table_name;<br><br>
+<li><strong> To select specific columns in a table:</strong><br><br>
+    SELECT name_column, name_column2<br>
+    FROM table_name;<br><br>
+<li><strong> To order values by ascending or descending:</strong><br><br>
+    ORDER BY column_name DESC<br>
+    or<br>
+    ORDER BY column_name ASC<br><br>
+<li><strong> To select certain instances within columns*:</strong><br><br>
+    WHERE column_name='value_of_instance'<br><br>
+    * there can also be different operators used with the where clause, such as any numerical operator, or built-in systems specific to SQL, or <, >, etc. </ul>
+    </p>
+            
+                    <div><h3>Vocab and terms</h3>
+                        <p>Here are some commonly used terms when talking about SQL:</p>
+                        <ul><li>
+entity - objects to represent
+<li>attribute - something that describes an entity
+<li>table - represents entities with attributes
+<li>column - separates each attribute
+    <li>rows - separates instances of the entity</ul>
+    </p>

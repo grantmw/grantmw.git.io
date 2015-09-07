@@ -1,0 +1,12 @@
+html {
+    background-color:orange;   
+}
+
+body {
+    font-family:"Comic Sans MS";
+}
+
+div h1 {
+    border:10px solid green;
+    text-align:center;
+}
