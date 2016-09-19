@@ -20,6 +20,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!--     Slider CSS-->    
+    <link href="css/slider-style.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -127,7 +130,7 @@
             <div class="row">
                 <div class="col-sm-4 portfolio-item"></div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -289,29 +292,53 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ss-front.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="container parlay">
+                <div class="modal-body">
+                    <div class="row">
+                        <h2>Parlay - Make Bets with Friends</h2>
+                        <hr class="star-primary">
+                        <p>Although <strong>currently down for maintenance</strong> (Venmo does agree with the sentiment of the application), Parlay is a single-page application for friends to make non-consequential, harmless bets with each other. Users are able to make bets, accept bets, and conveniently exchange money when a winner is declared. The tech-stack includes: Rails, Angular.js, and the Venmo API.</p>
+                        <p>After coming up with the idea for the application, I acted as the team lead, collaborating with a few friends. What I did: Integrated Venmo OAuth for authorization and authentication; designed the relational database which allowed users to exchange real money with Venmo friends; built out routes using Angular.</p>
+                        <ul class="list-inline item-details">
+                            <li>Check out the code:
+                                <strong><a href="https://github.com/grantmw/auto-complete-search">Github Repo</a>
+                                </strong>
+                            </li>
+                        </ul>
+                        <p>See how it works below:</p>
+                        <div class="col-md-6 portfolio-item">
+                            <img class="img-responsive" src="img/projects/parlay-login700_400.png" alt="">
+                            <p>Login using Venmo OAuth</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-6 portfolio-item">
+                            <img class="img-responsive" src="img/projects/parlay-propose700_400.png" alt="">
+                            <p>Users can propose a bet.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 portfolio-item">
+                            <img class="img-responsive" src="img/projects/parlay-accept700_400.png" alt="">
+                            <p>Users are able to accept or decline bets. Bets that have not been "shook on" live here. <br><br></p>
+                            <hr>
+                        </div>
+                        <div class="col-md-6 portfolio-item">
+                            <img class="img-responsive" src="img/projects/parlay-declare700_400.png" alt="">
+                            <p>Once bet receivers accept a bet, the bet is on. The winner of the bet can be declared anytime; both parties must declare the same winner.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 portfolio-item">
+                            <img class="img-responsive" src="img/projects/parlay-outstanding700_400.png" alt="">
+                            <p>After the winner is declared, the loser has the option to pay while the winner awaits payment.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-6 portfolio-item">
+                            <img class="img-responsive" src="img/projects/parlay-payment700_400.png" alt="">
+                            <p>Winners receive real payments through Venmo's API. <br><br></p>
+                            <hr>
                         </div>
                     </div>
                 </div>
@@ -330,21 +357,37 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Slider</h2>
+                            <h2>Dynamic Slider</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p></p>
+                            <h5>Test it out!</h5>
+                            <div id="full-slider-container">
+                                <div class="slidercontainer">
+                                    <div class="button subtract"> - </div>
+                                    <div class="inputcontainer">
+                                        <input id="slider" type="range" data-popup-enabled="true" data-show-value="true" name="slider" min="0" max="100" value="50">
+                                        <div class="slidevalue">
+                                            <div class="handle">
+                                                50
+                                            </div>
+                                            <div class="pop">
+                                                50
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <div class="button add"> + </div>
+                                    <div class="submit-button">
+                                        <input type="submit" value="Implement!">
+                                    </div>
+                                </div>
+                                <div class="implement"> 
+                                    Your Selected Value: 50
+                                </div>
+                            </div>
+                            <p>Wanting to build something from scratch, I created an interesting range (slider) input element with different value views and different modes of change. Users can change the input value by manually dragging and clicking along the range, or clicking holding the +/- buttons to increment the value by 5. Centering the different value views and aligning the custom displays was trickier than I thought.</p>
+                            <p>Try it out above.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>The Code:
+                                    <strong><a href="https://github.com/grantmw/slider">Github Repo</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -430,8 +473,12 @@
         </div>
     </div>
 
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- slider -->
+    <script src="js/slider.js" type="text/javascript"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

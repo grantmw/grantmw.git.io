@@ -4,6 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+.parlay hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid black;
+
+}
+
 .deployed-link {
   font-size: 200%;
 }
