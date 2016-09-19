@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+.deployed-link {
+  font-size: 200%;
+}
 
 #portfolio {
   text-align: center;
