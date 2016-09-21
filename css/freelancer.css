@@ -9,26 +9,20 @@
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid black;
-
 }
-
 .deployed-link {
   font-size: 200%;
 }
-
 #portfolio {
   text-align: center;
 }
-
 .resume-img {
   width: 40%;
   margin: auto;
 }
-
 #profile-pic {
   width: 30%;
 }
-
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;

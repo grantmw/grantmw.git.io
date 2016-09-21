@@ -1,6 +1,5 @@
 $(function(){
 	//slider
-
 	var update = document.getElementById("slider").oninput = function(){
 	    var input_value = $('#slider').val();
 	    $('.handle').html(input_value);
@@ -8,14 +7,11 @@ $(function(){
 	    $('.pop').html(input_value);
 	    $('.implement').html("Your Selected Value: " + input_value);
 	};
-
 	$('.inputcontainer input').bind("mousedown mouseup", function(){
 	    $('.handle').toggle();
 	    $('.pop').toggle();
 	})
-
 	var moving
-
 	var move = function(direction){
 	    if (direction === "add"){
 	        $("#slider").val(parseInt($("#slider").val())+5);
@@ -25,7 +21,6 @@ $(function(){
 	    }
 	    update();
 	};
-
 	$('.slidercontainer')
 	.on('mousedown', '.subtract', function(){
 	    moving = setInterval(function(){
@@ -46,10 +41,8 @@ $(function(){
 	.on('click', '.add', function(){
 	    move("add");
 	});
-
 	$(".submit-button input").click(function(){
 	    $('.implement').fadeIn(300).fadeOut(700);
 	})
-
 
 });
